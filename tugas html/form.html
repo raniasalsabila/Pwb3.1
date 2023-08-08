@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <h2>Buat akun baru</h2>
+    <form action="welcome.html" method="POST">
+        <br><label for="first-name">Nama depan:</label>
+        <br><input type="text" id="first-name" required>
+
+        <br><label for="last-name">Nama Belakang:</label>
+        <br><input type="text" id="last-name" name="last-name" required>
+        
+        <p><label>Jenis Kelamin</label></p>
+        <input type="radio" id="male" name="gender" value="laki-laki" required>
+        <label for="male">Laki-Laki</label><br>
+        <input type="radio" id="female" name="gender" value="Perempuan" required>
+        <label for="female">Perempuan</label><br><br>
+
+        <label for="nationality">Kebangsaan</label>
+        <select id="nationality" name="nationality">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Amerika">Amerika</option>
+            <option value="Inggris">Inggris</option>
+            <!--Add more nationality options here-->
+        </select><br><br>
+
+        <p><label for="spoken-languages">Bahasa yang di ucapkan:</label></p>
+        <input type="checkbox" id="bahasaIndonesia" name="bahasaIndonesia" value="Bahasa-Indonesia">
+        <label for="bahasaIndonesia">Bahasa Indonesia</label><br>
+        <input type="checkbox" id="bahasaInggris" name="bahasaInggris" value="Bahasa-Inggris">
+        <label for="bahasaInggris">Bahasa Inggris</label><br>
+        <input type="checkbox" id="other" name="other" value="Other">
+        <label for="other">Other</label><br>
+
+        <p>Bio</p>
+        <textarea id="spoken-languages" name="spoken-languages" required></textarea>
+
+    <ol>
+        <button type="submit"><a href="welcome.html">Sign Up</a></button>
+    </ol>    
+    </form>
+</body>
+</html>
